@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Somos Más | Inscripción</title>
+	<!--Import Google Icon Font-->
+	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+	<!--Import materialize.css-->
+	<link type="text/css" rel="stylesheet" href="css/materialize.min.css"  media="screen,projection"/>
+	<!-- Estilos externos -->
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<!-- Fuente externa -->
+	<link href="https://fonts.googleapis.com/css?family=Barlow" rel="stylesheet">
+	<!--Let browser know website is optimized for mobile-->
+	<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+</head>
+<body>
+	<header>
+		<nav class="black">
+			<div class="container">
+				<div class="nav-wrapper black">
+					<a href="index.html" class="brand-logo">Grupo Rinsa</a>
+				</div>				
+			</div>
+		</nav>
+	</header>
+	
+		<iframe class="iframeFormulario" src="https://script.google.com/embed/macros/s/AKfycbxg4TEk5WcfNGnscC4YqxECCdcQCGsSDqs3PkrnMcugr8BMleoi/exec" frameborder="0" allowfullscreen></iframe>
+	
+	<footer class="page-footer teal">
+		<div class="container">
+			<div class="row">
+				<div class="col l6 s12">
+					<h5 class="white-text">Grupo Rinsa</h5>
+					<p class="grey-text text-lighten-4">Nos comprometemos con el desarrollo de quienes quieren lograr un mundo mejor</p>
+				</div>
+			<div class="col l4 offset-l2 s12">
+				<h5 class="white-text">Links</h5>
+				<ul>
+					<li><a class="grey-text text-lighten-3" href="#!">Home</a></li>
+					<li><a class="grey-text text-lighten-3" href="#!">Contactanos</a></li>
+				</ul>
+			</div>
+		</div>
+		</div>
+		<div class="footer-copyright">
+			<div class="container">
+			© 2018 Grupo Rinsa
+			</div>
+		</div>
+	</footer>
+	<!--Import jQuery before materialize.js-->
+	<script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+	<script type="text/javascript" src="js/materialize.min.js"></script>
+	<script type="text/javascript">
+		$(document).ready(function(){
+			$('ul.tabs').tabs({
+				swipeable: true,
+				responsiveThreshold : 1920
+			});
+
+			function () {
+				var tabActivada = $(".active");
+				var alturaFinal= $(".tabs-content").find(tabActivada).height();
+				var alturaFinal= alturaFinal + "px !important";
+
+				$('.tabs-content').css('height', alturaFinal);	
+			};
+
+			var url = data.url + "&output=embed";
+			window.location.replace(url);
+		});
+	</script>
+</body>
+</html>
